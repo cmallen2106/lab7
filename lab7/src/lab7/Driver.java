@@ -50,6 +50,7 @@ public class Driver {
 		while (!linkedStack.isEmpty()) {
 			System.out.println("LinkedStack: " + linkedStack.pop());
 		}
+		System.out.println("\n");
 
 	}
 
