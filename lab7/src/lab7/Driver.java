@@ -52,6 +52,33 @@ public class Driver {
 		}
 		
 		System.out.println("\n");
+		
+		
+		/*
+		 * Exercise 2
+		 * Modify the LinkedStack class to include a new method called removeBottomHalf,
+		 * which removes the half of elements sitting at the bottom of the stack.
+		 * Test the method using the Driver program. What is the time complexity of this method?
+		 */
+		
+		//create new LinkedStack
+		LinkedStack linkedStack2 = new LinkedStack(); 
+		
+		linkedStack2.push(1);
+		linkedStack2.push(7);
+		linkedStack2.push(3);
+		linkedStack2.push(4);
+		linkedStack2.push(9);
+		linkedStack2.push(2);		
+		
+		//connect removeBottomHalf method from the LinkedStack class
+		linkedStack2.removeBottomHalf(); 
+		
+		//print remaining elements
+		System.out.println("After removing bottom half: " + linkedStack2);
+		
+		//Time complexity is O(N)
+		
 
 	}
 
